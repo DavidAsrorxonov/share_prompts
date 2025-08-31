@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,11 @@ export default function RootLayout({ children }) {
           <div className="gradient"></div>
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import Feed from "@/components/Feed";
+
 export default function Home() {
   return (
     <section className="w-full flex-center flex-col">
@@ -11,6 +13,8 @@ export default function Home() {
         most effective AI prompts. Whether you are writing, coding, designing,
         or brainstorming, find the perfect prompt to unlock AI's full potential
       </p>
+
+      <Feed />
     </section>
   );
 }
